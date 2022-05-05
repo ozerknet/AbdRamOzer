@@ -27,6 +27,9 @@ public class GoogleTest {
         gmailButtonElement.click();
         //Gmail: Free, Private & Secure Email | Google Workspace
 
+        driver.navigate().back();
+
+
         String expectedTitle = "Gmail: Free, Private & Secure Email | Google Workspace";
         String actualTitle = driver.getTitle();
 
