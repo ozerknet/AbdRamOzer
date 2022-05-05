@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
 
@@ -21,6 +21,8 @@ public class GoogleTest {
         WebElement agreeButton = driver.findElement(By.id("L2AGLb"));
         agreeButton.click();// used to click on any button
 
+        Thread.sleep(3000);
+
         WebElement gmailButtonElement = driver.findElement(By.className("gb_d"));
         gmailButtonElement.click();
         //Gmail: Free, Private & Secure Email | Google Workspace
@@ -29,7 +31,7 @@ public class GoogleTest {
         String actualTitle = driver.getTitle();
 
         if (actualTitle.equals(expectedTitle)) {
-            System.out.println("Title verifiaction PASSED!");
+            System.out.println("Title verification PASSED!");
         } else {
             System.out.println("Title verification FAIL!!!");
         }
