@@ -30,7 +30,7 @@ public class GoogleTest {
         driver.navigate().back();
 
 
-        String expectedTitle = "Gmail: Free, Private & Secure Email | Google Workspace";
+        String expectedTitle = "Google";
         String actualTitle = driver.getTitle();
 
         if (actualTitle.equals(expectedTitle)) {
