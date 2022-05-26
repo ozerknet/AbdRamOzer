@@ -18,14 +18,19 @@ public class T4_TEST {
         //a. “Home” link
 //        WebElement homeLink_ex1= driver.findElement(By.cssSelector("a[class='nav-link']"));
 //        WebElement homeLink_ex2= driver.findElement(By.cssSelector("a.nav-link"));
+       // WebElement homeLink_ex1= driver.findElement(By.cssSelector("a[class='nav-link']"));
+       // WebElement homeLink_ex2= driver.findElement(By.cssSelector("a.nav-link"));
         WebElement homeLink_ex3= driver.findElement(By.cssSelector("a[href='/']"));
 
         //b. “Forgot password” header
-        WebElement forgetPasswordHeader1= driver.findElement(By.cssSelector("div.example>h2"));
+       // WebElement forgetPasswordHeader1= driver.findElement(By.cssSelector("div.example>h2"));
 
 //        WebElement forgetPasswordHeader2= driver.findElement(By.xpath("h2[.='Forgot Password'"));
 //
 //        WebElement forgetPasswordHeader3= driver.findElement(By.xpath("h2[text()='Forgot Password'"));
+        WebElement forgetPasswordHeader2= driver.findElement(By.xpath("//h2[.='Forgot Password']"));
+
+      // WebElement forgetPasswordHeader3= driver.findElement(By.xpath("//h2[text()='Forgot Password']"));
 
     }
 }
