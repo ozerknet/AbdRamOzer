@@ -1,4 +1,4 @@
-package cydeo.automationexercise;
+package automationexercise;
 
 import cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.Alert;
