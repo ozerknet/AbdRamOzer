@@ -40,17 +40,24 @@ public class TestCase8 {
 
         //6. The products list is visible
         List<WebElement> productList = driver.findElements(By.xpath("//div[@class='col-sm-4']"));
+        Assert.assertTrue(productList.size() > 0);
 
-        for (WebElement each : productList) {
+        //7. Click on 'View Product' of first product
+        WebElement firstProduct = driver.findElement(By.xpath("//a[@href='/product_details/1']"));
+        firstProduct.click();
 
-            System.out.println(productList.);
+        //8. User is landed to product detail page
+        String expectedtitle = "Automation Exercise - Product Details";
+        String actualtitle = driver.getTitle();
 
+        Assert.assertEquals(expectedtitle, actualtitle);
+
+        //9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
+        List<WebElement> productDetails = driver.findElements(By.xpath("//div[@class='product-information']"));
+        for (WebElement each : productDetails) {
+            System.out.println(each.getText());
         }
 
-
-//7. Click on 'View Product' of first product
-//8. User is landed to product detail page
-//9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
 
 
     }
