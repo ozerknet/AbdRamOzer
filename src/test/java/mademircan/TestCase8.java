@@ -41,10 +41,10 @@ public class TestCase8 {
         //6. The products list is visible
         List<WebElement> productList = driver.findElements(By.xpath("//div[@class='col-sm-4']"));
 
-        for (WebElement each : productList) {
-
-            System.out.println(productList.);
-
+        if(productList.size()>0){
+            System.out.println("Product is list visible");
+        }else{
+            System.out.println("Something is wrong");
         }
 
 
