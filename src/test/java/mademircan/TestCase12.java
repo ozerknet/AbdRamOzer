@@ -52,10 +52,17 @@ public class TestCase12 {
 
         //9. Verify both products are added to Cart
         List<WebElement> viewCartTable = driver.findElements(By.xpath("//table/tbody/tr"));
-
         Assert.assertTrue(viewCartTable.size() == 2);
 
         //10. Verify their prices, quantity and total price
+        List<WebElement> product1Details = driver.findElements(By.xpath("//tbody/tr[@id='product-1']"));
+
+        for (WebElement each : product1Details) {
+            System.out.println(each.getText());
+            Assert.assertTrue(each.isDisplayed());
+
+        }
+
     }
 
 
