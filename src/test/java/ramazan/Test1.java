@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test1 {
     WebDriver driver;
+
     @BeforeMethod
     public void setup(){
         driver= cydeo.utilities.WebDriverFactory.getDriver("chrome");
