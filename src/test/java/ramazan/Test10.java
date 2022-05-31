@@ -25,5 +25,6 @@ public class Test10 {
         WebElement subscription = driver.findElement(By.xpath("//h2[.='Subscription']"));
         //System.out.println("subscription.isDisplayed() = " + subscription.isDisplayed());
 
+
     }
 }
