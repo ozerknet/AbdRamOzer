@@ -34,8 +34,10 @@ public class Test6 {
         WebElement message = driver.findElement(By.xpath("  //textarea[@data-qa='message'] "));
         message.sendKeys("Im  getting problem with this file. can you  sort it out");
         WebElement upload= driver.findElement(By.xpath("//input[@name='upload_file']"));
+        upload.sendKeys("/Users/ramazanyildirim/Downloads");
         WebElement submit= driver.findElement(By.xpath("//input[@data-qa='submit-button']"));
         submit.click();
+
         Alert alert = driver.switchTo().alert();
         alert.accept();
         WebElement succesMesssage = driver.findElement(By.xpath("//div[@class=\"status alert alert-success\"]"));
