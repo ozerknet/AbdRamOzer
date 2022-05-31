@@ -24,6 +24,12 @@ public class Test10 {
         products.click();
         WebElement subscription = driver.findElement(By.xpath("//h2[.='Subscription']"));
         //System.out.println("subscription.isDisplayed() = " + subscription.isDisplayed());
+        WebElement subscriptionEmail = driver.findElement(By.xpath("//input[@id='susbscribe_email']"));
+        subscriptionEmail.sendKeys("r.y3433@gmail.com");
+        WebElement subs = driver.findElement(By.xpath("//button[@id='subscribe']"));
+        subs.click();
+
+
 
 
     }
