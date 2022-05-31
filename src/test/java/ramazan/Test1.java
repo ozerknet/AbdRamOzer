@@ -27,7 +27,7 @@ public class Test1 {
         WebElement name= driver.findElement(By.xpath("//input[@type='text']"));
         name.sendKeys("ramazan yildirim"+ Keys.ENTER);
         WebElement email= driver.findElement(By.xpath("(//input[@type='email'])[2]"));
-        email.sendKeys("r.ydghght2@gmail.com"+ Keys.ENTER);
+        email.sendKeys("r.y3833@gmail.com"+ Keys.ENTER);
         WebElement text = driver.findElement(By.xpath("//b[contains(text(),'Enter Account Information')]"));
         text.click();
         System.out.println("text.isDisplayed() = " + text.isDisplayed());
