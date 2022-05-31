@@ -26,9 +26,8 @@ public class Test7 {
         String actualTitle = driver.getTitle();
         String expectedTitle = "Automation Exercise";
         Assert.assertEquals(actualTitle, expectedTitle, "Title is not matching here.");
-        WebElement otomation=driver.findElement(By.xpath("(//button[@class='btn btn-success'])[3]"));
-        otomation.click();
-
+        WebElement automation=driver.findElement(By.xpath("(//button[@class='btn btn-success'])[3]"));
+        automation.click();
 
     }
 
